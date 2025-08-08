@@ -13,3 +13,10 @@ const sortedArray = myArray.sort(function (a, b) {
   return a - b;
 });
 console.log(sortedArray);
+
+// Adding three numbers to the sorted array and keeping it in ascending order.
+sortedArray.splice(6, 0, 19, 23, 30);
+const sortedArrayA = sortedArray.sort(function (a, b) {
+  return a - b;
+});
+console.log(sortedArrayA);
