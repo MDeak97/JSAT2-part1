@@ -62,3 +62,57 @@ if (result == -1) {
 } else {
   console.log(`The value of ${value} was found at index ${result}`);
 }
+
+// Q1.6 - Creating a Binary search function to find a specific value within an array.
+// Array we are searching
+const searchArrayB = [13, 17, 90, 23, 66, 78, 100, 112, 16, 53];
+console.log(searchArrayB);
+
+// Value we are searching for within array
+value = 1;
+console.log(`Value: ${value}`);
+
+// Creating Binary Search function
+function binarySearch(arraySearch, target) {
+  // Setting found variable to -1
+  let found = -1;
+  // Logging the array to search and the value to find
+  console.log(`Array to search is: ${arraySearch}`);
+  console.log(`Value to search is: ${value}`);
+
+  // Declare start and end points of the array
+  let start = 0;
+  let end = arraySearch.length - 1;
+  console.log(`Start: ${start}, End: ${end}`);
+
+  // Loop through array while start does not meet the end
+  while (start <= end) {
+    // Find mid point
+    let mid = Math.floor((start + end) / 2);
+    console.log(`Mid: ${mid}`);
+    // Test if value is present at the mid point
+    if (arraySearch[mid] == target) {
+      console.log(`ArraySearch[${mid}]: ${arraySearch[mid]}`);
+      found = mid;
+      break;
+    } else if (arraySearch[mid] < target) {
+      // Look at right side of array
+      console.log(`ArraySearch[${mid}] : ${arraySearch[mid]}`);
+      start = mid + 1;
+      console.log(`Start: ${start}, End: ${end}`);
+    } else {
+      console.log(`ArraySearch[${mid}] : ${arraySearch[mid]}`);
+      end = mid - 1;
+      console.log(`Start: ${start}, End: ${end}`);
+    }
+  } // End of while loop
+  return found;
+}
+// Call function binarySearch
+const resultB = binarySearch(searchArrayB, value);
+// Output results
+if (resultB == -1) {
+  console.log(`The value of ${value} was not found`);
+} else {
+  console.log(`The value of ${value} was found at index ${resultB}`);
+}
