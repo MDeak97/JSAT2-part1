@@ -32,7 +32,7 @@ const searchArray = [20, 12, 55, 70, 100, 30, 28, 19, 18, 92, 66];
 console.log(searchArray);
 
 // Value we are searching for within array
-let value = 1;
+let value = 28;
 console.log(`Value: ${value}`);
 
 // Creating Sequential search function
