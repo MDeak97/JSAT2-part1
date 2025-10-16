@@ -120,3 +120,5 @@ if (resultB == -1) {
 // Q1.7 - View attached Excel file to see Test Plan.
 
 // Q1.8 - View attached Excel file to see Test Plan and results.
+
+// Q1.9 - View attached word document or Part 1 folder to see name of JavaScript file.
