@@ -1,7 +1,7 @@
 // File: script.js
 // Description: A file to answer questions from JSAT 2 Part 1
 // Author: Michael Deak
-// Date: 09/08/2025
+// Date: 17/10/2025
 // Version: 1.0.0
 
 // Q1.1 - Defining the array.
@@ -116,3 +116,5 @@ if (resultB == -1) {
 } else {
   console.log(`The value of ${value} was found at index ${resultB}`);
 }
+
+// Q1.7 - View attached Excel file to see Test Plan
