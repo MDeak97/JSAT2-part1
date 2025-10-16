@@ -117,4 +117,4 @@ if (resultB == -1) {
   console.log(`The value of ${value} was found at index ${resultB}`);
 }
 
-// Q1.7 - View attached Excel file to see Test Plan
+// Q1.7 - View attached Excel file to see Test Plan.
